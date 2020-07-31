@@ -1,10 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import './Footer.scss';
-
 import AppleStore from '../../assets/images/apple-store.png'
 import GoogleStore from '../../assets/images/google-store.png'
 import MicrosoftStore from '../../assets/images/microsoft-store.png'
+import './Footer.scss';
 
 const Footer = () => {
     return (

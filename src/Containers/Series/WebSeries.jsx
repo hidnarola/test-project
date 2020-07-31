@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import { connect } from 'react-redux';
 import { getWebSeries } from '../../store/actions';
+import PosterImg from '../../components/Poster';
+import _map from 'lodash/map';
 import './WebSeries.scss';
+
 const WebSeries = (props) => {
 
     useEffect(() => {
@@ -12,7 +15,7 @@ const WebSeries = (props) => {
         return (
             <div key={i} className="col-md-2 series">
                 <div className="item">
-                    <img src={data.images['Poster Art'].url} alt={`series_${i}`} width="200px" height="250px" />
+                    <PosterImg imgSrc={data.images['Poster Art'].url} />
                 </div>
                 <p>{data.title}</p>
             </div>
@@ -25,7 +28,7 @@ const WebSeries = (props) => {
             <div className="container">
                 <div className="row">
                     {isloading ? <div className="loader">Loading....</div> :
-                        webSeries.map((item, i) => renderWebSeries(item, i))
+                        _map(webSeries, (item, i) => renderWebSeries(item, i))
                     }
                 </div>
             </div>

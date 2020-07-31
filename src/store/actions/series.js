@@ -10,6 +10,11 @@ import _slice from 'lodash/slice';
 
 const PROGRAM_TYPE = 'series';
 
+/**
+ * @author : Narola
+ * @description : 'Get & Filter series from mock data'
+ */
+
 export const getWebSeries = () => {
     return (dispatch) => {
         dispatch({ type: GET_SERIES_REQUEST });

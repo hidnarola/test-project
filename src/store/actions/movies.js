@@ -10,6 +10,11 @@ import _slice from 'lodash/slice';
 
 const PROGRAM_TYPE = 'movie';
 
+/**
+ * @author : Narola
+ * @description : 'Get & Filter movies from mock data'
+ */
+
 export const getMovies = () => {
     return (dispatch) => {
         dispatch({ type: GET_MOVIES_REQUEST });
