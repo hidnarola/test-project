@@ -1,0 +1,17 @@
+.series-section{
+    margin: 50px 0 50px 0;
+    .series{
+        .item {
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        p {
+            margin: 8px 0 25px;
+            font-size: 14px;
+            line-height: 14px;
+        }
+    }
+}
